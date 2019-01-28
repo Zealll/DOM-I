@@ -50,3 +50,27 @@ navs[2].textContent = 'Vision';
 navs[3].textContent = 'Features';
 navs[4].textContent = 'About';
 navs[5].textContent = 'Contact';
+
+
+let secondImg = document.getElementById("cta-img")
+secondImg.setAttribute('src', 'img\mid-page-accent.jpg') 
+
+const btn = document.querySelector('button')
+btn.textContent = 'Get Started'
+
+const headerFour = document.querySelectorAll('h4')
+headerFour[0].textContent = 'Features';
+headerFour[1].textContent = 'About';
+headerFour[2].textContent = 'Services';
+headerFour[3].textContent = 'Product';
+headerFour[4].textContent = 'Vision';
+headerFour[5].textContent = 'Contact';
+
+const topContent = document.querySelectorAll('.top-content p')
+topContent[0].textContent = 'Features elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+topContent[1].textContent = 'About elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
+const bottomContent = document.querySelectorAll('.bottom-content p')
+bottomContent[0].textContent = 'Services elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+bottomContent[1].textContent = 'Product elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+bottomContent[2].textContent = 'Vision elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';

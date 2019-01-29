@@ -50,6 +50,7 @@ navs[2].textContent = (siteContent["nav"]["nav-item-3"]);
 navs[3].textContent = (siteContent["nav"]["nav-item-4"]);
 navs[4].textContent = (siteContent["nav"]["nav-item-5"]);
 navs[5].textContent = (siteContent["nav"]["nav-item-6"]);
+navs.forEach(contents => contents.style.color = "green")
 
 const headerOne = document.querySelector('h1')
 headerOne.innerHTML = ('Dom <br> Is <br> Awesome')
@@ -82,3 +83,21 @@ paragraphs[5].innerHTML = '123 Way 456 Street <br> Somewhere, USA';
 paragraphs[6].textContent = (siteContent["contact"]["phone"])
 paragraphs[7].textContent = (siteContent["contact"]["email"])
 paragraphs[8].textContent = (siteContent["footer"]["copyright"])
+
+let allNavs = document.querySelector("nav")
+allNavs.style.color = 'red'
+
+let prependedA = document.createElement('a')
+prependedA.textContent = "Prepended"
+prependedA.href = "#"
+allNavs.prepend(prependedA)
+prependedA.style.color = 'green'
+
+let appendedA = document.createElement('a')
+appendedA.textContent = 'Appended'
+appendedA.href = "#"
+allNavs.appendChild(appendedA)
+appendedA.style.color = 'green'
+
+
+

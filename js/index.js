@@ -52,12 +52,12 @@ navs[4].textContent = (siteContent["nav"]["nav-item-5"]);
 navs[5].textContent = (siteContent["nav"]["nav-item-6"]);
 
 const headerOne = document.querySelector('h1')
-headerOne.innerHTML = 'Dom <br> Is <br> Awesome'
+headerOne.innerHTML = ('Dom <br> Is <br> Awesome')
 
-let secondImg = document.querySelector("#cta-img")
+let secondImg = document.getElementById("cta-img")
 secondImg.setAttribute('src', siteContent["cta"]["img-src"])
 
-const middleImage = document.querySelector('.middle-img')
+const middleImage = document.getElementById('middle-img')
 middleImage.src = (siteContent["main-content"]["middle-img-src"])
 
 const btn = document.querySelector('button')
@@ -71,20 +71,14 @@ headerFour[3].textContent = (siteContent["main-content"]["product-h4"])
 headerFour[4].textContent = (siteContent["main-content"]["vision-h4"])
 headerFour[5].textContent = (siteContent["contact"]["contact-h4"])
 
-const topContent = document.querySelectorAll('.top-content p')
-topContent[0].textContent = 'Features elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
-topContent[1].textContent = 'About elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+const paragraphs = document.querySelectorAll('p')
+paragraphs[0].textContent = (siteContent["main-content"]["features-content"])
+paragraphs[1].textContent = (siteContent["main-content"]["about-content"])
+paragraphs[2].textContent = (siteContent["main-content"]["services-content"])
+paragraphs[3].textContent = (siteContent["main-content"]["product-content"])
+paragraphs[4].textContent = (siteContent["main-content"]["vision-content"])
 
-const bottomContent = document.querySelectorAll('.bottom-content p')
-bottomContent[0].textContent = 'Services elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
-bottomContent[1].textContent = 'Product elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
-bottomContent[2].textContent = 'Vision elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
-
-
-const cont = document.querySelectorAll('.contact p')
-cont[0].innerHTML = '123 Way 456 Street <br> Somewhere, USA';
-cont[1].textContent = '1 (888) 888-8888';
-cont[2].textContent = 'sales@greatidea.io';
-
-const foot = document.querySelector('footer p')
-foot.textContent = 'Copyright Great Idea! 2018'
+paragraphs[5].innerHTML = '123 Way 456 Street <br> Somewhere, USA';
+paragraphs[6].textContent = (siteContent["contact"]["phone"])
+paragraphs[7].textContent = (siteContent["contact"]["email"])
+paragraphs[8].textContent = (siteContent["footer"]["copyright"])
